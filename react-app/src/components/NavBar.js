@@ -16,6 +16,8 @@ const NavBar = (props) => {
       const response = await fetch('/.auth/me');
       const payload = await response.json();
       const { clientPrincipal } = payload;
+      // eslint-disable-next-line no-debugger
+      debugger;
       return clientPrincipal;
     } catch (error) {
       console.error('No profile could be found');
