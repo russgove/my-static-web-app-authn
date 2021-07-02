@@ -18,6 +18,7 @@ const NavBar = (props) => {
       const { clientPrincipal } = payload;
       // eslint-disable-next-line no-debugger
       debugger;
+      console.log(clientPrincipal);
       return clientPrincipal;
     } catch (error) {
       console.error('No profile could be found');
